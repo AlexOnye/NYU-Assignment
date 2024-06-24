@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Onyegbula's About Page</title>
+    <link rel="stylesheet" href="styles_spring2024.css">
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Homework 1 About Page</h1>
+        <p>Welcome to my about page, please enjoy</p>
+    </div>
+
+    <div class="sidebar">
+        <img src="https://media.licdn.com/dms/image/C4D03AQFaNG299Dy9LA/profile-displayphoto-shrink_800_800/0/1661427248125?e=2147483647&v=beta&t=RsZ_Ch2dGIqLP9J0pVsxyj6TrOQbcoLwP4zBAMBvHR4"
+            alt="Alexander Onyegbula" height="150" width="150">
+        <nav class="menu">
+            <ul>
+                <li><a href='hw1_home.html'>Home</a></li>
+                <li><a href='hw1_about.html'>About</a></li>
+                <li><a href='hw1_contact.html'>Contact</a></li>
+                <li><a href='hw1_interests.html'>Interests</a></li>
+                <li><a href='hw1_skills.html'>Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+	<header>
+		<h1>About Me</h1>
+	</header>
+        <section>
+            <h2>Welcome to My Page!</h2>
+            <p>
+                Hi there! I'm Alexander Onyegbula, a passionate data analyst based in New York. I love to take long walks,
+                play video games, learn about new technologies, and constantly strive to improve my knowledge.
+            </p>
+
+            <p>
+                I graduated with a second class upper with a bachelor's degree in Economics from Pan-Atlantic University,
+                Lagos, Nigeria.
+            </p>
+
+            <p id="dynamicMessage"></p>
+
+            <script>
+                const currentTime = new Date().getHours();
+                let greeting;
+
+                if (currentTime < 12) {
+                    greeting = 'Good morning!';
+                } else if (currentTime < 18) {
+                    greeting = 'Good afternoon!';
+                } else {
+                    greeting = 'Good evening!';
+                }
+
+                const dynamicMessage = document.getElementById('dynamicMessage');
+                dynamicMessage.textContent = `${greeting} Thanks for visiting my page.`;
+            </script>
+        </section>
+    </div>
+
+    <div class="footer">
+        <br />
+        <a href="../Index.html" title="Return to HW Index Page"><img
+                src="https://i.pinimg.com/736x/9b/8f/ac/9b8fac7c61ce505437240122a067fbd7.jpg"
+                alt="Go to HW Index Page" height="200" width="200"></a>
+        <br />
+        <a href="http://sps.nyu.edu" title="NYU SPS Homepage">NYU SPS Homepage</a>
+    </div>
+
+</body>
+
+</html>

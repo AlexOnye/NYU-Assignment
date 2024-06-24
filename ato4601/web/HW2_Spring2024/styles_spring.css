@@ -1,0 +1,85 @@
+h1 {color: blue;}
+
+h2 {color: gray;}
+
+#main_header {
+				color : seagreen;
+				font-family :"Arial Black";
+				font-size: 20px;
+
+}
+
+
+.redh1 {
+			color : darkred;
+			font-family : Verdana;
+			font-size : 50px;
+}
+			
+.blueh1 {
+			color : darkblue;
+			font-family : Helvetica;
+			font-size : 25px;
+}
+
+
+
+
+h1.r {
+	
+		color : mediumvioletred;
+		font-family : "Roboto Thin";
+		font-size : 20px;
+		
+}
+
+h2.b {
+	
+		color : midnightblue;
+		font-family : "Big Caslon";
+		font-size : 10px;
+		
+}
+
+.r {color : red;}
+.o {color : orange;}
+.y {color : yellow;}
+.g {color : green;}
+.b {color : blue;}
+.i {color : indigo;}
+.v {color : violet;}
+
+
+.header{
+			background-color: red;
+			width: 100%;
+			text-align : center;
+
+}
+
+.sidebar{
+			float : left;
+			background-color: blue;
+			width: 15%;
+		
+}
+
+.main{
+			float : both;
+			background-color: green;
+			width: 85%;
+			
+}
+
+.footer{
+			clear : both;
+			background-color : yellow;
+			width: 100%;
+
+}
+
+
+a:link { color : green; text-decoration: none;}
+a:visited {color : red;}
+a:hover {text-decoration: underline;}
+a:active {color:blue;}

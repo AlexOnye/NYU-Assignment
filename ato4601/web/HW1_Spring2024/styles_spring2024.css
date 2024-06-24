@@ -1,0 +1,110 @@
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; 
+}
+
+/* Table Styles */
+
+table {
+    margin: auto; 
+}
+
+th, td {
+    text-align: center; 
+    padding: 8px; 
+}
+
+/* Input, Button, and Textarea Styles */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* List Styles */
+ul {
+    list-style: square;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 20px;
+			background-color: #522d80;
+			color: #fff;
+        }
+
+        .sidebar {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+			border-right: 10px solid black;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+
+
+/* Link Styles */
+a:link { color: blue; text-decoration: none; }
+a:visited { color: darkblue; }
+a:hover { text-decoration: underline; }
+a:active { color: green; }

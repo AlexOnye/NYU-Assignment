@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+	<head>
+		<title>Alexander Onyegbula's Webpage with JS</title>
+		
+<script>
+    function sayHello() {
+        alert("Hello, You are being prompted by an Internal Javascript User Defined Function");
+    }
+</script>
+
+<script>
+    function sayHelloName() {
+        alert("Hello " + document.getElementById("name").value + ". Welcome to my Page");
+    }
+</script>
+
+<script>
+    function ManipulateElements() {
+        man_name = document.getElementById("man_name").value;
+        document.getElementById("man_message").innerHTML = "Hello " + man_name + ". Welcome to my webpage, I embedded you into the HTML";
+    }
+</script>
+	
+	
+	</head>
+	
+		<hr/>
+	
+	<body>
+		<h1> Alexander Onyegbula's Spring 2024 JS page </h1>
+	
+		<button type = "button" onclick = "alert('Hello, Welcome to my JS Page');">Click Me - Inline JS Code</button>
+	
+		<br/>
+		
+		<button type = "button" onclick = "sayHello();">Click Me - Inline JS User Defined Function</button>
+		
+		
+		<!-- Getting Values in JS from other Elements-->
+		<br/>
+		<input id = "name" placeholder = "Enter Your Name">
+		<br/>
+		<button type = "button" onclick = "sayHelloName();">Click Here - Get Values from Input HTML Element JS User Defined function </button>
+		<p id = "message"></p>
+	
+		
+		
+		<br/>
+		<input id = "man_name" placeholder = "Enter Your Name">
+		<br/>
+		<button type = "button" onclick = "ManipulateElements();">Click Here - Manipulate Values from HTML Elements Internal JS User Defined Function </button>
+		<p id = "man_message"></p>
+	
+	
+		<br/>
+		<input id = "ext_name" placeholder = "Enter Your Name">
+		<br/>
+		<button type = "button" onclick = "ManipulateElementsExternal();">Click Here - Manipulate Values from HTML Elements External JS User Defined Function </button>
+		<p id = "ext_message"></p>
+	
+	
+		<br/>
+		<input id = "debug_name" placeholder = "Enter Your Name">
+		<br/>
+		<button type = "button" onclick = "ManipulateElementsExternal_Debug();">Click Here - Manipulate Values from HTML Elements External JS User Defined Function </button>
+		<p id = "debug_message"></p>
+	
+	
+		<br/>
+		Value 1: <input id="Val1" placeholder="Enter Value 1"/>
+		<br/>
+		Value 2: <input id="Val2" placeholder="Enter Value 2"/>
+		<br/>
+		<button type="button" onclick="ValueSwap()">Swap Values Without New Variables</button>
+		<p id="swap_message"></p>
+	
+	
+	
+	
+	
+<style>
+
+	.btn{
+		
+		width: 100px;
+		height: 100px;
+		font-size:30px;
+		padding: 20px;
+		text-align: center;
+		border-radius: 50%;
+	
+	
+	}
+	
+	.silver{
+	
+		background-color: silver;
+		color: black;
+	
+	}
+	
+	
+	.orange{
+		background-color: orange;
+		color: white;
+		
+	}
+	
+	
+	.calc_output{
+		width: 500px;
+		font-size: 100px;
+		text-align: right;
+		color: white;
+		background-color: black;
+		
+	}
+	
+</style>	
+
+	<table bgcolor = "black">
+		<tr>
+			<td colspan = "4">
+				<input id="calc_display" class  = "calc_output" type = "text" placeholder = 0 disabled> 
+			</td>
+		
+		</tr>
+
+
+		<tr>
+			<td> <input class= "btn" type = "button" value = "AC" onclick = "calc_display.value = '' "></td>
+			<td> <input class= "btn " type = "button" value = "+/-" onclick = "calc_display.value = eval(calc_display.value * -1)"></td>
+			<td> <input class= "btn " type = "button" value = "%" onclick = "calc_display.value = parseFloat(eval(calc_display.value * .01)).toFixed(2) + '%' "></td>
+			<td> <input class= "btn orange" type = "button" value = "/" onclick = "calc_display.value += '/' "></td>
+		</tr>
+
+
+		<tr>
+			<td> <input class= "btn " type = "button" value = "7" onclick = "calc_display.value += '7'"></td>
+			<td> <input class= "btn " type = "button" value = "8" onclick = "calc_display.value += '8'"></td>
+			<td> <input class= "btn " type = "button" value = "9" onclick = "calc_display.value += '9'"></td>
+			<td> <input class= "btn orange" type = "button" value = "*" onclick = "calc_display.value += '*'"></td>
+		</tr>
+
+		
+		<tr>
+			<td> <input class= "btn " type = "button" value = "4" onclick = "calc_display.value += '4'"></td>
+			<td> <input class= "btn " type = "button" value = "5" onclick = "calc_display.value += '5'"></td>
+			<td> <input class= "btn " type = "button" value = "6" onclick = "calc_display.value += '6'"></td>
+			<td> <input class= "btn orange" type = "button" value = "-" onclick = "calc_display.value += '-'"></td>
+		</tr>
+
+
+		<tr>
+			<td> <input class= "btn " type = "button" value = "1" onclick = "calc_display.value += '1'"></td>
+			<td> <input class= "btn " type = "button" value = "2" onclick = "calc_display.value += '2'"></td>
+			<td> <input class= "btn " type = "button" value = "3" onclick = "calc_display.value += '3'"></td>
+			<td> <input class= "btn orange" type = "button" value = "+" onclick = "calc_display.value += '+'"></td>
+		</tr>
+
+		
+		<tr>
+			<td colspan = "2"> <input class= "btn" type = "button" value = "0" onclick = "calc_display.value += '0'"></td>
+			<td> <input class= "btn silver" type = "button" value = "." onclick = "calc_display.value += '.'"></td>
+			<td> <input class= "btn orange" type = "button" value = "=" onclick = "calc_display.value = eval(calc_display.value) "></td>
+		</tr>
+
+
+
+
+
+
+
+	</table>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src = "lecture3_Alexander_Onyegbula_js_Spring2024.js"></script>
+	
+	
+	
+	
+	</body>
+	
+</html>
